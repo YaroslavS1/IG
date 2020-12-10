@@ -1,3 +1,4 @@
+from typing import Text
 import nbconvert
 """jupyter nbconvert --to html IG.ipynb"""
 
@@ -17,7 +18,7 @@ fig.show()
 fig.write_html("./1Zadanie.html")
 '''
 
-''''
+'''
 import plotly.graph_objects as go
 
 name = ['Центральный регион', 'Северо-запад', 'Поволжье', 'Урал', 'Сибирь', 'Дальний восток']
@@ -93,7 +94,7 @@ fig.add_trace(go.Bar(x = name, y = date_1, name='Компания Г'))
 fig.add_trace(go.Bar(x = name, y = date_2, name='«ТехСтанкоМаш»'))
 fig.update_layout(barmode='stack', template="plotly_dark",
                   title="№4 Доли продаж")
-# fig.show()
+fig.show()
 # fig.write_html("./4Zadanie.html")
 '''
 
